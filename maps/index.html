@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,34 @@
     <title>Maps site</title>
     <h1>Maps</h1>
 </head>
+
 <body>
     <p>This is a page for maps, which works with an EV3.
     <p><a href=yann.gq target="_blank" rel="noopener noreferrer">
-        <span class="material-icons">
-        west</p> 
-        </span></a>
-    <button type="button">Sign in</button>
-</p>
+            <span class="material-icons">
+                west</p>
+    </span></a>
+    <button  onclick="myFunction()">Sign in</button>
+    <div id="demo" style="display: none;">Here is where you sign in
+        <form>
+            <input type="email" class="form-control" id="email" Placeholder="email">
+            <input type="password" class="form form-control" id="password" Placeholder="password">
+           <p><button onclick="myFunction2()"><span class="material-icons">
+            close
+            </span></button></p>
+    </div>
+    </form>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.display=""
+        }
+            function myFunction2() {
+            document.getElementById("demo").style.display="none"
+            }
+
+    </script>
+    </div>
+    </p>
 </body>
+
 </html>
